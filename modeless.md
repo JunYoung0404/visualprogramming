@@ -10,7 +10,7 @@
 ![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/1feeb404-9d84-4ef1-bdfe-199ac0cb1443)
 ```
 부모창에 LIST BOX를 만들어준다.
-도구상자에서 버튼을 가져온다.
+도구상자에서 버튼가져와 이름을 "Modeless"로 변경해준다.
 우 클릭후 제어 변수 추가에 이름:m_List로 변경해준다.
 ```
 
