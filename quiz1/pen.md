@@ -2,10 +2,11 @@
 
 ![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/b9c25fb6-e138-4eb4-822d-e35adc65108e)
 
-MFC를 활용하여 펜을 작성하시오
+## MFC를 활용하여 펜을 작성하시오
 
-## 1.펜의 굴기를 선택할 수 있다.
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/c7a7ca4f-a548-424a-aafb-03af9d118610)
+## 1.펜의 굵기를 선택할 수 있다.
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/0416965e-376f-4f46-8a31-02058e8d74dc)
+
 ```
 void CPenView::OnSize1()
 {
@@ -32,7 +33,8 @@ void CPenView::OnSize32()
 }
 ```
 ## 2.펜의 색상을 선택할 수 있다.
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/aea85d49-f38c-41a7-b2a8-a252101a407e)
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/26c09a15-b8b8-4aa3-857f-44ab474a4d1a)
+
 ```
 void CPenView::OnSelectColor()
 {
