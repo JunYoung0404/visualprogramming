@@ -24,6 +24,8 @@ float a1, a2 = 400;
  canvas.Invalidate();
 ```
 
+### 결과
+
 
 ## 2. 두 수를 곱하는 프로그램을 WinUI3와 C#을 활용하여 작성하시오.
 
