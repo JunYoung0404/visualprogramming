@@ -25,7 +25,7 @@ float a1, a2 = 400;
 ```
 
 ### 결과
-
+https://github.com/JunYoung0404/visualprogramming/assets/50895748/158525e4-bdba-4c51-ad0e-b3eee5b81102
 
 ## 2. 두 수를 곱하는 프로그램을 WinUI3와 C#을 활용하여 작성하시오.
 
