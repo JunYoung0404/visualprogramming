@@ -71,6 +71,7 @@ appWindow.Resize(new SizeInt32 { Width = 320, Height = 320 });
 ![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/878286e3-c2a9-45fe-896b-7df011ad1ae8)
 
 잘못 입력한 경우
+
 ![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/8e7cc197-9262-4107-a281-41237027e3f3)
 
 
