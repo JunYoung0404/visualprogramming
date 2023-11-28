@@ -16,9 +16,9 @@ WinUI3에서 펜 프로그램의 작성과 저장을 구현하시오.
 6. 데이터를 읽을 수 있다.
 
 ### 채점기준
-1. 교과서를 따라 해서 성공하였다. -> 성공하였습니다.
+### 1. 교과서를 따라 해서 성공하였다. -> 성공하였습니다.
    
-2. 교과서에 다른 특징을 추가하였다. (설명을 추가해 주세요.)
+### 2. 교과서에 다른 특징을 추가하였다. (설명을 추가해 주세요.)
    
 저는 각 Write,Read,Clear버튼에 테투리와 안의 색상을 추가해 보았습니다.
 ControlTemplate 속성을 사용하여 간단한 스타일을 적용 할 수 있고 본 코드는
@@ -35,7 +35,46 @@ ControlTemplate 속성을 사용하여 간단한 스타일을 적용 할 수 있
     Write
 </Button>
 ```
-4. 저장하고 읽는 것을 교과서 보다 향상 시켰다.
+결과 이미지
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/2e278989-6cec-4c7f-a161-8348b4530945)
+
+두번째로 교과서의 메뉴바에 모든내용을 추가해 보았습니다.
+
+xaml부분
+```
+    <MenuBar>
+    <MenuBarItem Title="File">
+        <MenuFlyoutItem Text="Save" Click="MenuFlyoutItem_Click"/>
+            <MenuFlyoutItem Text="New File" Click="MenuFlyoutItem_Click_1"/>
+            <MenuFlyoutItem Text="Load" Click="MenuFlyoutItem_Click_2"/>
+            <MenuFlyoutItem Text="Exit" Click="MenuFlyoutItem_Click_3"/>
+        </MenuBarItem>
+    
+</MenuBar>
+```
+New File부분
+```
+vx.clear();
+vy.clear();
+col.clear();
+size.clear();
+flag = false;
+px = 100;
+py = 100;
+mySize = 16;
+```
+
+EXit부분
+```
+this->Close();
+```
+나머지 저장과 읽기는 밖으로 나와있는 Write,read부분과 동일한 코드입니다.
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/c427130e-0e75-4d66-a02b-821ce3858f48)
+
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/54b2a0a5-e9b4-4322-b39a-5c296eafe365)
+
+
+### 3. 저장하고 읽는 것을 교과서 보다 향상 시켰다.
 
 처음에는 저장과읽고 삭제가 엄청 느렸었는데 저는 누르면 즉시 반영하도록 만들어 보았습니다. 
 CanvasControl_Draw부분에 Invalidate();를 추가하여 누르면 즉시 반영되도록 향상 시켜보았습니다.
@@ -277,19 +316,30 @@ canvas.Invalidate(); // 추가
 ```
 
 # 실행결과 이미지 1~4
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/aeead8f3-8e4b-429a-a075-ce931ca20348)
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/a8158f1b-38eb-4cc4-9dc6-31dbd7733681)
+1. 펜을 만든다.
+   
+2. 굵기를 조절할 수 있다.
+   
+3. 색상을 선택할 수 있다
+   
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/34dc2a0b-e3b7-48a0-b34c-403d85213b77)
+
+4.슬라이더바와 칼라선택 창을 보이거나 지울 수 있다.
+
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/eec1623b-7bc1-4ff1-98e7-ccbebd4fa465)
+
+
 
 ## 저장
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/f3da598d-af75-4ae8-a1fc-4150c3172183)
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/999568a7-8b01-466a-bee1-3aefc6fa2419)
 
 ## 불러오기
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/9500bd7d-d081-47ee-8be6-20e9cc3889ea)
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/a3db0776-6d39-4853-9fc8-4624584380fc)
-
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/6499ba01-6b31-49f9-99ac-d3f7eb2bdf4d)
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/8de9334e-5f9d-457a-9ba0-4d8541c26966)
 
 ## 즉시 삭제하기
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/87eaa4d2-5cff-41f8-a048-2e1a31a1585f)
-![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/8d47c194-120c-47f3-8c22-d97c625aad83)
+Clear버튼 누르는 즉시 삭제
+![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/7f9e7e7f-6b9d-4f2b-83af-b7401de05e9e)
+
 
 
