@@ -1,6 +1,7 @@
 # 기말시험실기1-BgControl Xaml 만들기
 # 코드 설명 및 만드는 법
-생성후
+비쥬얼 프로그래밍 
+winui3 빈앱 생성후
 ### BgLabelControl.idl 부분
 ```
 // BgLabelControl.idl
@@ -89,7 +90,9 @@ namespace winrt::BgLabelControlApp::implementation
 #include <winrt/Windows.UI.Xaml.Interop.h>
 ```
 Themes폴덧 생성후 Generic.xaml생성
+
 ![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/1ca1d3a0-9b0e-4651-bf42-262b5a759683)
+
 ![image](https://github.com/JunYoung0404/visualprogramming/assets/50895748/cf0f73fe-575a-46fc-bd51-a0912261e051)
 
 ### Generic.xaml 부분
